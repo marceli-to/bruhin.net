@@ -1,8 +1,6 @@
 <?php
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\ContactController;
-use App\Http\Controllers\Api\CourseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +12,3 @@ use App\Http\Controllers\Api\CourseController;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-
-Route::post('/course/register', [CourseController::class, 'register']);
-Route::get('/course/{courseId}', [CourseController::class, 'get']);
-Route::post('/contact/submit', [ContactController::class, 'store']);
